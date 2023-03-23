@@ -1,0 +1,449 @@
+/* font-family: 'Noto Sans JP', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Noto Serif JP', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+/* font-family: 'Josefin Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+/* font-family: 'Oswald', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'EB Garamond', serif; */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap");
+*, h1 {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    color: #333;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: #474645;
+    transition: 0.5s;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul li {
+    list-style: none;
+    letter-spacing: 1.5px;
+}
+
+.sp {
+    display: block;
+}
+
+.pc {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .sp {
+        display: none;
+    }
+    .pc {
+        display: block;
+    }
+}
+a.anchor {
+    display: block;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+@media screen and (min-width: 1024px) {
+    a.anchor {
+        padding-top: 80px;
+        margin-top: -80px;
+    }
+}
+
+.btn {
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #333;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 16px;
+    border: 1px solid #333;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.btn img {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    bottom: 50%;
+    transform: translateY(-50%, -50%);
+    z-index: -2;
+}
+.btn .btnImg {
+    width: 20px !important;
+    height: auto !important;
+}
+.btn .back {
+    left: 16px;
+}
+@media screen and (min-width: 768px) {
+    .btn {
+        font-size: 12px;
+        width: 240px;
+        padding: 20px 0;
+    }
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.redBtn {
+    color: #fff;
+    width: 240px;
+    border: none;
+    background: linear-gradient(#D1001B, #A60716);
+}
+
+.redBtn:hover {
+    color: #D1001B;
+}
+
+.leftBtn {
+    margin: 0 auto 0 0;
+}
+
+.lineLink {
+    text-align: right;
+    width: 100%;
+    margin: 40px 0 0 auto;
+    padding: 0 40px 0 0;
+    border: none;
+}
+.lineLink img {
+    right: 0;
+}
+
+.backLink {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0;
+    margin: 40px 0 0 0;
+    transition: 0.5s;
+}
+
+.bgskew::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -130%;
+    background: #333;
+    width: 120%;
+    height: 100%;
+    transform: skewX(-25deg);
+    z-index: -1;
+}
+
+.bgskew:hover::before {
+    animation: skewanime 0.5s forwards;
+}
+
+.bgskewWh::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -130%;
+    background: #fff;
+    width: 120%;
+    height: 100%;
+    transform: skewX(-25deg);
+    z-index: -1;
+}
+
+.bgskewWh:hover::before {
+    animation: skewanime 0.5s forwards;
+}
+
+@keyframes skewanime {
+    100% {
+        left: -10%;
+    }
+}
+.btnshine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    animation: shine 1s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 125%;
+    }
+}
+.border1Gray {
+    border-bottom: 1px solid #ccc;
+}
+
+.secTitle h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 40px 0;
+}
+.secTitle h2::before {
+    content: "";
+    display: block;
+    width: 60px;
+    margin: 0 auto 32px;
+    border-top: 1px solid #333;
+}
+.secTitle h2 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #D1001B;
+    margin: 12px 0 0 0;
+}
+@media screen and (min-width: 1024px) {
+    .secTitle h2 {
+        font-size: 30px;
+        margin: 0 0 64px 0;
+    }
+    .secTitle h2::before {
+        width: 100px;
+        margin: 0 auto 64px;
+    }
+    .secTitle h2 span {
+        font-size: 16px;
+        margin: 16px 0 0 0;
+    }
+}
+.secTitle h3 {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+}
+@media screen and (min-width: 1024px) {
+    .secTitle h3 {
+        font-size: 20px;
+        margin: 0 0 40px 0;
+    }
+}
+
+main {
+    margin: 58px 0 0 0;
+}
+@media screen and (min-width: 1024px) {
+    main {
+        margin: 80px 0 0 0;
+    }
+}
+
+.paginationWrap {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+.paginationWrap .pagination {
+    display: none;
+}
+.paginationWrap .prevLink {
+    font-size: 12px;
+    transition: 0.5s;
+}
+.paginationWrap .prevLink:hover {
+    color: #D1001B;
+}
+.paginationWrap .prevLink::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/button/button_arrow2_back.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 4px;
+    top: 14px;
+}
+.paginationWrap .nextLink {
+    font-size: 12px;
+    transition: 0.5s;
+}
+.paginationWrap .nextLink:hover {
+    color: #D1001B;
+}
+.paginationWrap .nextLink::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/button/button_arrow2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 4px;
+    top: 14px;
+}
+@media screen and (min-width: 768px) {
+    .paginationWrap {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .paginationWrap .pagination {
+        display: block;
+        position: relative;
+        bottom: 2px;
+    }
+    .paginationWrap .pagination .nav-links .page-numbers {
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        width: 48px;
+        height: 48px;
+        margin: 0 2px;
+        padding: 16px;
+        border: 1px solid #333;
+    }
+    .paginationWrap .pagination .nav-links .current {
+        color: #fff;
+        background: #333;
+    }
+    .paginationWrap .pagination .nav-links .prev.page-numbers,
+    .paginationWrap .pagination .nav-links .next.page-numbers {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .paginationWrap .prevLink {
+        margin: 0 32px 0 0;
+    }
+    .paginationWrap .prevLink::before {
+        top: 12px;
+    }
+    .paginationWrap .nextLink {
+        margin: 0 0 0 32px;
+    }
+    .paginationWrap .nextLink::after {
+        top: 12px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .paginationWrap .pagination {
+        bottom: 8px;
+    }
+    .paginationWrap .pagination .nav-links .page-numbers {
+        font-size: 24px;
+        width: 64px;
+        height: 64px;
+        padding: 18px;
+    }
+    .paginationWrap .prevLink {
+        font-size: 16px;
+        margin: 0 64px 0 0;
+    }
+    .paginationWrap .nextLink {
+        font-size: 16px;
+        margin: 0 0 0 64px;
+    }
+}
+
+.navWrap {
+    width: calc(100% - 40px);
+    margin: 0 auto 80px;
+}
+.navWrap .innerNav .title {
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 1;
+    margin: 0 0 40px 0;
+    position: relative;
+    top: 8px;
+}
+.navWrap .innerNav .title img {
+    width: 12px;
+    height: 12px;
+    margin: 0 18px 0 0;
+    position: relative;
+    bottom: 2px;
+}
+.navWrap .innerNav .nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navWrap .innerNav .nav li a {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #D1001B;
+    margin: 0 12px 12px 0;
+    padding: 10px 20px 12px;
+    border: 2px solid #D1001B;
+    border-radius: 60px;
+}
+.navWrap .innerNav .nav li a:hover {
+    color: #fff;
+    background: #D1001B;
+}
+.navWrap .innerNav .nav li .active {
+    color: #fff;
+    background: #D1001B;
+}
+@media screen and (min-width: 768px) {
+    .navWrap .innerNav {
+        display: flex;
+    }
+    .navWrap .innerNav .title {
+        font-size: 14px;
+        margin: 0 24px 0 0;
+    }
+    .navWrap .innerNav .nav {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .navWrap {
+        width: calc(100% - 80px);
+    }
+    .navWrap .innerNav .title {
+        margin: 0 48px 0 0;
+    }
+    .navWrap .innerNav .nav {
+        width: 880px;
+    }
+    .navWrap .innerNav .nav li a {
+        margin: 0 20px 20px 0;
+        padding: 20px 40px 22px;
+    }
+}
+@media screen and (min-width: 1040px) {
+    .navWrap {
+        width: 1040px;
+    }
+}
